@@ -36,7 +36,7 @@ function TodoList() {
         if (res.status === 200) {
           console.log("Post successful:", res.data);
           setTask(initialTask);
-          // navigate("/profile");
+          navigate("/profile ");
         } else {
           console.error("Unexpected response from server:", res);
           alert("Failed to submit task. Please try again.");
@@ -52,29 +52,12 @@ function TodoList() {
   };
 
   return (
-    <div
-      className="max-w-5xl mx-auto p-6 bg-slate-100 shadow-md rounded-lg"
-      id="task"
-    >
+    <div className="max-w-5xl mx-auto p-6 bg-slate-100 shadow-md rounded-lg">
       <h1 className="text-center font-bold text-blue-600 text-3xl  mb-8">
         Task Handler
       </h1>
       <form onSubmit={onSubmit}>
         <ul className="space-y-4">
-          {/* Id */}
-          {/* <li>
-            <label className="font-medium text-sm text-gray-600">Id:</label>
-            <input
-              type="text"
-              placeholder="Enter task ID"
-              name="id"
-              value={Task.id}
-              onChange={onChange}
-              className="w-full border border-gray-300 rounded-md p-2 mt-1 text-sm bg-gray-50 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
-              required
-            />
-          </li> */}
-          {/* Employee Name */}
           <li>
             <label className="font-medium text-sm text-gray-600">
               Employee Name:
@@ -208,7 +191,7 @@ function TodoList() {
             >
               Submit
             </button>
-          </li> 
+          </li>
         </ul>
       </form>
     </div>

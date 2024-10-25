@@ -104,10 +104,10 @@ const Profile = () => {
   if (error) return <div className="text-red-600 text-center">{error}</div>;
 
   return (
-    <div>
+    <div className="">
       <div className="flex">
         <div className=" flex w-[20%]">
-          <div className="w-72 sm:w-80 md:w-96 flex  bg-blue-400 flex-col items-center shadow-md p-2">
+          <div className="w-72 sm:w-80 md:w-96 flex  bg-blue-500 flex-col items-center shadow-md p-2">
             {/* Profile Image Section */}
             <div
               data-aos="fade-right"
@@ -194,7 +194,7 @@ const Profile = () => {
        
         <div className="w-[80%]">
           <TodoList />
-        </div>
+        </div> 
       </div>
       <a href="#table">
         <TableShow />

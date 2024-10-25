@@ -17,8 +17,8 @@ function App() {
         <Route path="/forgot-password" element={<Forgot />} />
         <Route path="/reset-password/:token" element={<Reset />} />
         <Route path="/profile" element={<Profile />} />
-        <Route path="/form" element={<TodoList />} />
-        <Route path="/edit/:id" element={<Update />} />
+        {/* <Route path="/form" element={<TodoList />} />
+        <Route path="/edit/:id" element={<Update />} /> */}
       </Routes>
     </div>
   );
