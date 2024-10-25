@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
@@ -48,7 +47,10 @@ const Reset = () => {
           Reset Password
         </h2>
 
-        <form onSubmit={handleSubmit} className="flex flex-col space-y-6 w-full">
+        <form
+          onSubmit={handleSubmit}
+          className="flex flex-col space-y-6 w-full"
+        >
           {/* Password Input */}
           <div className="relative">
             <input
@@ -91,7 +93,9 @@ const Reset = () => {
         </form>
 
         {/* Messages */}
-        {message && <p className="text-green-600 font-medium mt-4">{message}</p>}
+        {message && (
+          <p className="text-green-600 font-medium mt-4">{message}</p>
+        )}
         {error && <p className="text-red-600 font-medium mt-4">{error}</p>}
       </div>
     </div>

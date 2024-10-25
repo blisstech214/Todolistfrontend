@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @keyframes hand-wave {
   0% { transform: rotate(0deg); }
   50% { transform: rotate(20deg); }
